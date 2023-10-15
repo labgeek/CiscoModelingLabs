@@ -1,0 +1,21 @@
+conf t
+no ip domain-lookup
+vtp mode transparent
+vtp domain jd.com
+enable secret cisco
+spann mode rapid
+spann port def
+ip routing
+ipv6 unicast-routing
+no service tim log
+no service time debug
+line con 0
+logging sync
+no exec-timeout
+privi level 15
+exit
+line vty 0 15
+exitline vty 0 15
+no login
+privi level 15
+host
